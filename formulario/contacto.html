@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contacto para elección de vestido a medida</title>
+	</head>
+	<body>
+		<p><h1> Rellena el siguiente formulario con tus datos de contacto y datos del producto</h1></p>
+		<form action="mailto:aburrielalquezar@gmail.com" method="post" enctype="text/plain">
+			<fieldset>
+				<legend>Información obligatoria</legend>
+				<label for="nombre_apellidos">Nombre y apellidos:</label><input id="nombre_apellidos" name="nombre_apellidos" placeholder="Nombre y apellidos" autofocus required><br>
+				<label for="telefono">Teléfono:</label><input id="telefono" name="telefono" type="tel" placeholder="Número de télefono" required><br>
+				<label for="mail">Correo electrónico:</label><input id="mail" name="mail" type="email" placeholder="email" required><br>
+				<label for="referencia">Referencia del producto:</label><input id="referencia" name="referencia" type="search" required><br>
+			</fieldset>
+			<label for="fecha_solicitud">Fecha de solicitud:</label><input id="fecha_solicitud" name="fecha_solicitud" type="date"><br>
+			<label for="fecha_pedido"></label>Semana para la que se desea recibir el pedido:<input id="fecha_pedido" name="fecha_pedido" type="week"><br>
+			<label for="cantidad">Número de vestidos pedidos(máximo 10 por pedido):</label><input id="cantidad" name="cantidad" type="number" min="1" max="10"><br>
+			<label for="color">Color:</label><input id="color" name="color" type="color"><br>
+			<input type="submit" value="Enviar"/>
+			<input type="reset" value="Reinicio"/>
+		</form>
+		
+	</body>
+</html>
